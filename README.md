@@ -1,6 +1,6 @@
 ## Haori36-MX - 36-Key Split Monoblock Ortholinear Keyboard
 
-Another no-frills build with per-key RGB LED, based on the [Choc version](https://github.com/penk/Haori36).
+Another no-frills build with per-key RGB LEDs, based on the [Choc version](https://github.com/penk/Haori36).
 
 ![](images/heroshot.jpg)
 
@@ -27,7 +27,9 @@ Quantity | Item
 To place an order for the Haori36-MX PCB:
 
 - Use the Gerber files available in the [production/](production/) folder.
-- Optionally, the [BOM](production/BOM.csv) and [CPL](production/CPL.csv) files can be utilized with a PCBA service. All components (except MCU) are soldered to the back (bottom) side of the board.
+- The [BOM](production/BOM.csv) and [CPL](production/CPL.csv) files can optionally be used with a PCBA service —— especially if you'd prefer to avoid soldering small diodes or LEDs. 😊
+
+All components (except the MCU) are soldered to the back (bottom) side of the board.
 
 The complete PCB design project is available in the [kicad/](kicad/) folder.
 
@@ -42,9 +44,9 @@ Print the case and plate using the provided [STL files](case/).
 Precompiled VIA-enabled firmware:
 
 - Flash `penk_haori36_mx_default.uf2` under [firmware/](firmware/) to the RP2040 MCU.
-- Load the [via.json](firmware/QMK/keyboards/penk/haori36_mx/via.json) file in `Design` tab for [VIA](https://usevia.app) configuration.
+- Load the [via.json](firmware/QMK/keyboards/penk/haori36_mx/via.json) file in the `Design` tab for [VIA](https://usevia.app) configuration.
 
-QMK source is available under [firmware/QMK/keyboards/penk/haori36_mx](firmware/QMK/keyboards/penk/haori36_mx/).
+The QMK source is available under [firmware/QMK/keyboards/penk/haori36_mx](firmware/QMK/keyboards/penk/haori36_mx/).
 
 ### Default Keymaps 
 
